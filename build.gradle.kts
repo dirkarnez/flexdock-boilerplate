@@ -7,10 +7,12 @@ plugins {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
+// https://mvnrepository.com/artifact/net.java.dev.flexdock/flexdock
+    implementation("net.java.dev.flexdock:flexdock:0.4")
 }
 
 application {
@@ -51,7 +53,7 @@ tasks.register<DefaultTask>("executable") {
 
 tasks.withType<DefaultLaunch4jTask> {
     bundledJre64Bit = true
-    bundledJrePath = "../jre"
+    bundledJrePath = "./jre"
     dontWrapJar = true
     headerType = "console"
     jar = "helloworld"

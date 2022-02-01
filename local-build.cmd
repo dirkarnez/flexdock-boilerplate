@@ -6,6 +6,8 @@ if exist build (
     rmdir /s /q build
 )
 
+xcopy /E /I %~dp0images\ %~dp0build\launch4j\images\
+
 .\gradlew build & .\gradlew createExe
 
 pause
