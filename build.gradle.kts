@@ -55,7 +55,7 @@ tasks.withType<DefaultLaunch4jTask> {
     bundledJre64Bit = true
     bundledJrePath = "./jre"
     dontWrapJar = true
-    headerType = "console"
+    headerType = "gui" // or "console"
     jar = "helloworld"
     jvmOptions = setOf("""-Dhelloworld.self="%EXEFILE%"""")
     outfile = "helloworld.exe"
