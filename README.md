@@ -1,2 +1,2 @@
-gradle-launch4j-boilerplate
-===========================
+flexdock-boilerplate
+====================
